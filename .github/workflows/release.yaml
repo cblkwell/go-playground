@@ -20,6 +20,11 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
+      - name: Install dependencies
+        run: |
+          npm install \
+            @semantic-release/changelog@6.0.3
+
       - name: Release
         uses: cycjimmy/semantic-release-action@v5
         with:
