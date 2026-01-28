@@ -5,6 +5,7 @@ on:
   push:
     branch:
       - main
+      - refine-release
 
 jobs:
   release:
